@@ -39,16 +39,10 @@ def handler_message():
         s = ''
         w = set()
         for f in response:
-            print(21)
-
             if str(f['word']) in w:
-                print(1)
-                print('уже було ', f['word'])
                 continue
             else:
-                print(2)
                 w.add( str(f['word']) )
-                print(w)
 
             if f['s']:
                 q = ''
