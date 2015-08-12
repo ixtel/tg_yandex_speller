@@ -4,7 +4,7 @@ import aiohttp
 from aiotg import TgBot
 
 #Debug mode
-# PYTHONASYNCIODEBUG = 1
+PYTHONASYNCIODEBUG = 1
 
 API = ''
 NUM_HANDLERS = 5
@@ -71,7 +71,6 @@ def handler_message(item):
 
 if __name__ == '__main__':     
     loop = asyncio.get_event_loop()
-    queue =  asyncio.Queue(loop=loop)
 
     try:
         loop.run_until_complete(asyncio.async(bot.loop()))
