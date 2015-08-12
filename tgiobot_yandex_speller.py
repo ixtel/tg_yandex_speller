@@ -4,7 +4,7 @@ import aiohttp
 from aiotg import TgBot
 
 #Debug mode
-PYTHONASYNCIODEBUG = 1
+#PYTHONASYNCIODEBUG = 1
 
 API = ''
 NUM_HANDLERS = 5
