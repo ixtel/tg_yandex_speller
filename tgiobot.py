@@ -3,7 +3,7 @@ import asyncio
 import aiohttp
 from aiotg import TgBot
 
-api = '89885175:AAEFAgCwgS-ITZ6uZo0rqOeRSofydT4bzrQ'
+api = ''
 bot = TgBot(api)
 
 
@@ -39,16 +39,10 @@ def handler_message():
         s = ''
         w = set()
         for f in response:
-            print(21)
-
             if str(f['word']) in w:
-                print(1)
-                print('уже було ', f['word'])
                 continue
             else:
-                print(2)
                 w.add( str(f['word']) )
-                print(w)
 
             if f['s']:
                 q = ''
